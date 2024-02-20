@@ -18,9 +18,7 @@ const SignInForm = () => {
       callbackUrl: '/',
     })
 
-    if (!res?.ok || !res.error) {
-      console.log('OK')
-    } else {
+    if (!res?.ok || res?.error) {
       console.log(res?.error)
     }
   }
